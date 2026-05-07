@@ -1,0 +1,125 @@
+{
+  "project_context": {
+    "name": "Emergent Multi-Agent Orchestrator",
+    "app_type": "hybrid_fullstack",
+    "description": "An out-of-the-box, rapid, intelligent sorting software and multi-agent orchestrator. Serious, utility-grade tool with zero bloat.",
+    "theme": "Light",
+    "archetype": "4 (Swiss & High-Contrast / USWDS Government Utility)"
+  },
+  "typography": {
+    "font_families": {
+      "primary": "Public Sans",
+      "secondary": "Source Sans 3",
+      "banned_fonts": ["any monospace font in user-facing UI", "Inter", "Roboto", "Syne"]
+    },
+    "scale_and_sizing": {
+      "h1": "text-4xl",
+      "h2": "text-3xl",
+      "h3": "text-2xl",
+      "h4": "text-xl",
+      "body": "text-base",
+      "small": "text-sm"
+    },
+    "strict_rules": [
+      "NO ALL CAPS. Never use uppercase for titles, buttons, or labels.",
+      "Sentence case ONLY for all UI elements (e.g., 'Multi-agent orchestrator dashboard', 'Save changes').",
+      "NO MONO FONTS anywhere visible to the user.",
+      "Proper grammar and complete sentences must be used everywhere.",
+      "No bold underlines or excessively large fonts (max 4xl for hero/dashboard titles)."
+    ]
+  },
+  "colors": {
+    "background": {
+      "default": "#FFFFFF",
+      "subtle": "#F0F0F0"
+    },
+    "text": {
+      "primary": "#1B1B1B",
+      "secondary": "#565C65"
+    },
+    "primary_action": {
+      "default": "#005EA2",
+      "hover": "#1A4480",
+      "active": "#163F73"
+    },
+    "status": {
+      "success": "#00A91C",
+      "error": "#D83933",
+      "warning": "#FFBE2E",
+      "info": "#00BDE3"
+    },
+    "borders": "#DFE1E2",
+    "strict_rules": [
+      "No purple or violet gradients.",
+      "No synthwave, glitch effects, or neon.",
+      "Zero 'vibecoder' aesthetics.",
+      "Strictly solid, accessible colors adhering to WCAG AA / APCA standards."
+    ]
+  },
+  "spacing_and_layout": {
+    "system": "USWDS scale (multiples of 8px mapped to Tailwind)",
+    "tokens": {
+      "p-2": "8px",
+      "p-4": "16px",
+      "p-6": "24px",
+      "p-8": "32px",
+      "p-12": "48px"
+    },
+    "container_padding": "p-6 md:p-8",
+    "dashboard_grid": "grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6",
+    "strict_rules": [
+      "Optical alignment and generous spacing.",
+      "Density should feel like a serious developer console: clean, structured, and utilitarian."
+    ]
+  },
+  "components": {
+    "cards": {
+      "border": "1px solid #DFE1E2",
+      "border_radius": "rounded-sm (max 4px)",
+      "shadow": "none or very subtle shadow-sm",
+      "background": "bg-white"
+    },
+    "buttons": {
+      "border_radius": "rounded-sm",
+      "padding": "px-6 py-3",
+      "typography": "Sentence case, font-medium"
+    },
+    "forms": {
+      "inputs": "flat white background, 1px gray border, clean focus state (ring-2 ring-[#005EA2] ring-offset-1)"
+    },
+    "customization": [
+      "Use Shadcn components but strip away heavy shadows and rounded pills.",
+      "Replace default Vercel-like styling with flat, sharp, USWDS-compliant styles."
+    ]
+  },
+  "key_features": [
+    "Multi-agent orchestrator dashboard: Cards showing live status of Designer, Coder, QA, and Deployer agents.",
+    "File sorter: Drag-and-drop zone for docs, auto-categorization list view.",
+    "GitHub repo manager: Repo connection status, file tree view, commit/PR AI logs.",
+    "Self-audit panel: Table or log view of AI actions, flagged issues.",
+    "Project pipeline: Input area for design specs, linear progress visualizer.",
+    "Activity log/console: Clean event stream. No terminal green/black aesthetics\u2014use professional list view."
+  ],
+  "media_and_images": {
+    "strategy": "Minimal to none. Rely on typography, grid structure, and USWDS iconography for visual interest.",
+    "image_urls": [
+      {
+        "url": "https://images.unsplash.com/photo-1649119162006-304b172c12d8?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzl8MHwxfHNlYXJjaHwyfHxtaW5pbWFsaXN0JTIwb2ZmaWNlJTIwd29ya3NwYWNlfGVufDB8fHx8MTc3NzQ0NDUwOXww&ixlib=rb-4.1.0&q=85",
+        "category": "background",
+        "description": "Minimalist desk for login or empty states, if absolutely necessary."
+      }
+    ],
+    "strict_rules": [
+      "Never use placeholder URLs.",
+      "Use lucide-react icons minimally to support labels, not decorate them."
+    ]
+  },
+  "instructions_to_main_agent": {
+    "1": "You are building a high-grade USWDS utility, NOT a flashy tech startup landing page.",
+    "2": "Initialize Tailwind with Public Sans font and the precise USWDS color hex codes.",
+    "3": "Enforce 'Sentence case' in all labels and titles. Search your code for ALL CAPS and remove them.",
+    "4": "Build a sidebar layout containing the core tools: Dashboard, File sorter, GitHub manager, Audit, Pipeline, Log.",
+    "5": "Do not include any monospace fonts (e.g., Courier, JetBrains) in the UI styling.",
+    "6": "Add data-testid attributes to all interactive elements."
+  }
+}

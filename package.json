@@ -1,0 +1,12 @@
+{
+  "name": "orchestrator-unison",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "install:all": "npm install --prefix frontend --legacy-peer-deps && pip install -r backend/requirements.txt",
+    "build:frontend": "npm run build --prefix frontend"
+  }
+}
